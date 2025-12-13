@@ -1,0 +1,14 @@
+# Ignore API token
+.env
+
+# Ignore large data folders
+data/raw/
+data/processed/
+data/external/
+
+# Ignore Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Ignore macOS system files
+.DS_Store
+env_temp.txt
