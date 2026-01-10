@@ -12,3 +12,4 @@ data/external/
 # Ignore macOS system files
 .DS_Store
 env_temp.txt
+NYC_CitiBike_Trips.html
