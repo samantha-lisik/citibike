@@ -1,15 +1,48 @@
-# Ignore API token
+# -------------------------
+# Secrets
+# -------------------------
 .env
 
-# Ignore large data folders
-data/raw/
-data/processed/
-data/external/
+# -------------------------
+# Data (ignore everything by default)
+# -------------------------
+data/raw/**
+data/processed/**
+data/external/**
 
-# Ignore Jupyter checkpoints
+# Re-include specific processed data files
+!data/processed/top20_stations.csv
+!data/processed/daily_trips_weather_2022.csv
+!data/processed/user_bike_sample.csv
+
+# Ensure the directory itself is tracked
+!data/processed/
+
+# -------------------------
+# Visualizations
+# -------------------------
+# Ignore all HTML by default (optional, if you want)
+*.html
+
+# Re-include the Kepler output you want versioned
+!visualizations/NYC_CitiBike_Trips.html
+
+# -------------------------
+# Jupyter
+# -------------------------
 .ipynb_checkpoints/
 
-# Ignore macOS system files
+# -------------------------
+# OS / editor junk
+# -------------------------
 .DS_Store
 env_temp.txt
-NYC_CitiBike_Trips.html
+
+# Virtual environments
+.venv/
+venv/
+
+# Python junk
+__pycache__/
+*.pyc
+
